@@ -28,3 +28,4 @@ jobs:
       with:
         branch: general-devel
         folder: ./build # Change this to the build directory of your app
+        github-token: ${{ secrets.GITHUB_TOKEN }}
