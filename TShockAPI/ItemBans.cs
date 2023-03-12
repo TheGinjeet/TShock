@@ -160,9 +160,9 @@ namespace TShockAPI
 			if (DataModel.ItemIsBanned(EnglishLanguage.GetItemNameById(player.TPlayer.inventory[args.SelectedItem].netID), args.Player))
 			{
 				player.TPlayer.controlUseItem = false;
-				player.Disable(GetString($"holding banned item: {itemName}"), disableFlags);
+				player.Disable(GetString($""), disableFlags);
 
-				SendCorrectiveMessage(player, itemName);
+				//SendCorrectiveMessage(player, itemName);
 
 				player.TPlayer.Update(player.TPlayer.whoAmI);
 				NetMessage.SendData((int)PacketTypes.PlayerUpdate, -1, player.Index, NetworkText.Empty, player.Index);
