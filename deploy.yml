@@ -2,7 +2,7 @@ name: Deploy my app
 
 on:
   push:
-    branches: [ main ] # Set the branch that will trigger the workflow
+    branches: [ general-devel ] # Set the branch that will trigger the workflow
 
 jobs:
   build:
